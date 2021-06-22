@@ -5,6 +5,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 /**
  * Bootstrap Class
  * 1. 스프링 부트 애플리케이션의 부트스트래핑(Bootstrapping) : 어플리케이션을 시작하기 위한 모든 준비, 자동 구성을 함
@@ -13,8 +14,9 @@ import org.springframework.context.annotation.Bean;
 // @SpringBootApplication 메타 어노테이션
 // @SpringBootConfiguration(alias for Configuration)
 // @ComponentScan
-// @AutoConfiguration
+// @EnableAutoConfiguration
 
+//@Configuration
 @SpringBootConfiguration
 public class HelloWorldApplication {
 	@Bean
